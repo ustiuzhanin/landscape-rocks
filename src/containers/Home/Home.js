@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Header from '../../components/Header/Header';
+import Carousel from '../../components/Carousel/Carousel';
 
 export class Home extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <p>qqq</p>
+        <Carousel />
       </div>
     )
   }

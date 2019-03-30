@@ -1,10 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
   font-family: 'Roboto Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
+
+  background-color: #ccc;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .hidden-mobile {
