@@ -13,19 +13,18 @@ export class Carousel extends Component{
         draggable: false
       };
       return (<div className={styles.container}>
-        <h2> Single Item</h2>
         <Slider {...settings}>
           <div>
-            <img src='https://dummyimage.com/240x200/fff/aaa' />
+            <img src='https://dummyimage.com/240x200/fff/aaa' alt='test' />
           </div>
           <div>
-            <img src='https://dummyimage.com/240x200/fff/aaa' />
+            <img src='https://dummyimage.com/240x200/fff/aaa' alt='test' />
           </div>
           <div>
-            <img src='https://dummyimage.com/240x200/fff/aaa' />
+            <img src='https://dummyimage.com/240x200/fff/aaa' alt='test' />
           </div>
           <div>
-            <img src='https://dummyimage.com/240x200/fff/aaa' />
+            <img src='https://dummyimage.com/240x200/fff/aaa' alt='test' />
           </div>
           
         </Slider>
