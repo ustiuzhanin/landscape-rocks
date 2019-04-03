@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/rocks/precache-manifest.bad4c9b69cfbe5d1d4f00d076a1c7a24.js"
+  "/landscape-rocks/precache-manifest.20413676db2e77235fb9a2f2aa5f8967.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/rocks/index.html", {
+workbox.routing.registerNavigationRoute("/landscape-rocks/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
