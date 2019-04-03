@@ -1,0 +1,28 @@
+.footer {
+  padding: 20px;
+  background-color: #383838;
+  color: #ffffff;
+}
+
+.footer h2,
+.footer a {
+  color: #fff;
+}
+
+.footer aside {
+  margin-bottom: 30px;
+}
+
+.footer aside h2 {
+  display: none;
+}
+
+.text {
+  margin-bottom: 30px;
+}
+
+.copyright {
+  font-size: 12px;
+  text-align: right;
+  color: #9c9c9c;
+}

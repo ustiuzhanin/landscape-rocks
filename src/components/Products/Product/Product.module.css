@@ -1,4 +1,11 @@
 .product {
     display: block;
+    max-width: 280px;
     margin: 0 auto;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    line-height: 26px;
+    box-shadow: 0px 0px 5px #ccc;
 }

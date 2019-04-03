@@ -1,0 +1,13 @@
+.contacts a {
+  display: block;
+  margin: 16px 0;
+  text-decoration: none;
+}
+
+.contacts svg {
+  margin-right: 4px;
+}
+
+.contacts svg path {
+  fill: #f7c90b;
+}

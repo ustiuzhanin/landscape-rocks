@@ -1,0 +1,13 @@
+.phone {
+    position: relative;
+    color: #f7c90b;
+    text-decoration: none;
+}
+
+.svg {
+    margin-right: 4px;
+}
+
+.svg path {
+    fill: #ffffff;
+}

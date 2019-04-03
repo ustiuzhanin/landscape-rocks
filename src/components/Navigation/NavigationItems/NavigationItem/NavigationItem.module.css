@@ -1,7 +1,10 @@
 .link a {
+    display: block;
+    margin: 10px 0;
     color: black;
+    text-decoration: none;
 }
 
 .link .active {
-    color: rebeccapurple;
+    color: #bfa361;
 }

@@ -17,10 +17,14 @@
     height: 100%;
 }
 
-.Logo {
+.logo {
     display: flex;
     align-items: center;
     height: 80%;
+}
+
+.logo img {
+    margin-left: 10px;
 }
 
 @media (max-width: 499px) {

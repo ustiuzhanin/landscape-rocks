@@ -1,5 +1,17 @@
-.button {
+.button {    
     padding: 10px;
     color: #000;
-    border: 1px solid #000;
+    border: 2px solid #bfa361;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #bfa361;
+    font-size: 17px;
+    font-family: inherit;
+}
+
+.button {
+    background-color: #bfa361;
+    width: 100%;
+    color: #fff;
 }

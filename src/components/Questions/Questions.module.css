@@ -1,0 +1,9 @@
+.questions {
+  padding: 20px;
+  background: linear-gradient(90deg, rgba(213, 51, 105, 0.09) 0%, rgba(192, 192, 192, 0.29) 100%);
+  line-height: 26px;
+}
+
+.title {
+  font-size: 24px;
+}
