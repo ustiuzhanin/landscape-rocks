@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Toolbar.module.css';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle';
-import Phone from '../NavContacts/Phone/Phone';
+import Phone from '../../ContactsSidebar/Phone/Phone';
 import Logo from '../../UI/Logo/Logo';
 
 const toolbar = (props) => (
