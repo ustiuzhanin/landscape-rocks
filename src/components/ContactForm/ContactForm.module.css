@@ -12,6 +12,11 @@
   margin-top: 20px;
 }
 
+.fieldset textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
 .legend {
   width: 100%;
   margin-bottom: 20px;
@@ -35,7 +40,40 @@
   display: block;
   width: 100%;
   margin-bottom: 15px;
-  padding: 6px;
+  padding: 4px 6px;
   font-size: 13px;
   color: #bfa361;
+  border-radius: 2px;
+  border: 2px solid transparent;
+  transition: border 0.5s ease;
 }
+
+.formField:hover,
+.formField:focus {
+  border: 2px solid #bfa361;
+}
+
+.iconSpan {
+  display: block;
+  width: 100%;
+  height: 100%; 
+  position: relative;
+}
+
+.iconSpan svg {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  width: 15px;
+  height: 15px;
+}
+
+.iconSpan path {
+  transition: fill 0.5s ease;
+}
+
+.iconSpan:hover path,
+.iconSpan:focus-within path {
+  fill: #bfa361;
+}
+
