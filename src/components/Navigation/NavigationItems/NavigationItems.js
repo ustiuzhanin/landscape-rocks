@@ -6,9 +6,9 @@ function navigationItems() {
   return (
     <ul className={styles.list}>
         <NavigationItem link='/' exact>Главная</NavigationItem>
-        <NavigationItem link='/q' exact>Каталог</NavigationItem>
+        <NavigationItem link='/catalog/' exact>Каталог</NavigationItem>
         <NavigationItem link='/w' exact>Калькулятор</NavigationItem>
-        <NavigationItem link='/e' exact>Контакты</NavigationItem>
+        <NavigationItem link='/contacts/' exact>Контакты</NavigationItem>
     </ul>
   )
 }

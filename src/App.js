@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Home from './containers/Home/Home';
-import Layout from './hoc/Layout/Layout'
+import Catalog from './containers/Catalog/Catalog';
+import Contacts from './containers/Contacts/Contacts';
+import Layout from './hoc/Layout/Layout';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Layout>
-          <Route path='/' component={Home} />
+          <Switch>
+            <Route path='/' exact component={Home} />
+            <Route path='/catalog' exact component={Catalog} />
+            <Route path='/contacts' exact component={Contacts} />
+          </Switch>
         </Layout>
       </div>
     );

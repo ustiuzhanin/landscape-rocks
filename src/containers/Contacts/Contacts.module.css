@@ -1,0 +1,32 @@
+.contacts {
+  margin-top: 56px;
+  padding: 5px 25px;
+  padding-bottom: 25px;
+}
+
+.contacts h1 {
+  font-size: 24px;
+}
+
+.contacts .text {
+  margin-bottom: 30px;
+}
+
+.contacts aside {
+  color: #fff;
+  background-color: #383838;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.contacts aside h2 {
+  margin-top: 12px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.contacts a {
+  color: #fff;
+}

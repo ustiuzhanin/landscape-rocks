@@ -7,15 +7,16 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 import styles from './Home.module.css';
 
 export class Home extends Component {
+  
   render() {
     return (
       <div className={styles.main}>
         <h1>Название компании</h1>
         <Carousel />
-        <Products />
+        <Products title="Наша продукция" />
         <Questions />
         <About />
-        <ContactForm />
+        <ContactForm title="Свяжитесь с нами!" btnTitle="Отправить" name phone email message/>
       </div>
     )
   }
