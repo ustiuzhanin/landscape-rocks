@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/landscape-rocks/precache-manifest.8cd82b865f1ce5ab312f1b8f21a038b8.js"
+  "/landscape-rocks/precache-manifest.494ef4aaa095f2ffadf7e0f18ad7ea2f.js"
 );
 
 workbox.clientsClaim();
