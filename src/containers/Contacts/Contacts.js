@@ -7,7 +7,7 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 function Contacts() {
   return (
     <section className={styles.contacts}>
-      <h1>Свяжиеть с нами!</h1>
+      <h1>Свяжитесь с нами!</h1>
       <p className={styles.text}>Чтобы получить оперативную информацию оставьте свои контакты на нашем сайте или самостоятельно свяжитесь с менеджером:</p>
       <ContactsSidebar />
       <ContactForm title='Заказать звонок' btnTitle="Позвоните мне!" name phone />

@@ -1,0 +1,13 @@
+.fullArticle {
+    margin-top: 56px;
+    
+}
+
+.imgWrapper img {
+  width: 100%;
+}
+
+.contentWrapper {
+  padding: 5px 25px;
+  padding-bottom: 25px;
+}

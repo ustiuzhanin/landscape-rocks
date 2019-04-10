@@ -1,0 +1,32 @@
+.article {
+  margin-bottom: 30px;
+}
+
+.article a {
+  display: flex;
+  text-decoration: none;
+}
+
+.title {
+  display: inline;
+
+  color: #383838;
+  border-bottom: 1px solid #383838;
+}
+
+.textWrapper {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.imgWrapper {
+  padding-top: 3px;
+  width: 80px;
+  height: 72px;
+  margin-right: 10px;
+}
+
+.capture {
+  font-size: 14px;
+  color: #716e6e;
+}

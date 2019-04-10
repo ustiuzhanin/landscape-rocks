@@ -8,6 +8,8 @@ function navigationItems() {
         <NavigationItem link='/' exact>Главная</NavigationItem>
         <NavigationItem link='/catalog/' exact>Каталог</NavigationItem>
         <NavigationItem link='/w' exact>Калькулятор</NavigationItem>
+        <NavigationItem link='/about' exact>О компании</NavigationItem>
+        <NavigationItem link='/articles' exact>Полезные статьи</NavigationItem>
         <NavigationItem link='/contacts/' exact>Контакты</NavigationItem>
     </ul>
   )
