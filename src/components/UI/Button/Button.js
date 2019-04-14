@@ -7,7 +7,7 @@ function button(props) {
   
 
   return (
-    <button className={classes} type={props.type}>{props.children}</button>
+    <button className={classes} type={props.type} onClick={props.clicked}>{props.children}</button>
   )
 }
 

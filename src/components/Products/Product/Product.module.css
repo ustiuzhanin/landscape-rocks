@@ -38,3 +38,17 @@
     background-color: #e2e2e2;
 }
 
+.link {   
+    display: block; 
+    padding: 10px;
+
+    border: 2px solid #bfa361;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 17px;
+    font-family: inherit;
+    background-color: #bfa361;
+}

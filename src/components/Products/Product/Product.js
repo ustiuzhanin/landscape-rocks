@@ -1,43 +1,55 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
 import styles from './Product.module.css';
-import Button from '../../UI/Button/Button';
 
 function product(props) {
-  let product = null;
-  let buttonText = 'Подробнее';
-  if(props.priceTable) {
-    buttonText = 'Заказать';
-    product = (
-      <table className={styles.table}>
-          <tbody>
-          <tr>
-            <th>Обьем, м&sup3;</th>
-            <th>Толшина, мм</th>
-            <th>Цена Руб/м&sup3;</th>
-          </tr>
-            {props.priceTable.map((item, key) => {
-              return (
-                <tr key={key}>
-                  <td>{item.size}</td>
-                  <td>{item.thickness}</td> 
-                  <td>{item.price}</td>
-                </tr>
-              )
-            })}
-          </tbody>
-      </table>
+
+    let productTable = null;
+
+    if(props.priceTable) {
+      productTable = (
+        <table className={styles.table}>
+            <tbody>
+            <tr>
+              <th>Обьем, м&sup3;</th>
+              <th>Толшина, мм</th>
+              <th>Цена Руб/м&sup3;</th>
+            </tr>
+              {props.priceTable.map((item, key) => {
+                return (
+                  <tr key={key}>
+                    <td>{item.size}</td>
+                    <td>{item.thickness}</td> 
+                    <td>{item.price}</td>
+                  </tr>
+                )
+              })}
+            </tbody>
+        </table>
+      )
+    }
+
+    return (
+      <React.Fragment>
+        <div className={styles.product}>
+          <img src={props.url} alt='test' />
+          <h3>{props.caption}</h3>
+          <p>{props.desc}</p>
+          {productTable}
+          <Link className={styles.link} to={{
+            pathname: '/catalog/' + props.caption,
+            state: {
+              caption: props.caption,
+              imgUrl: props.url
+            }
+          }}>
+            Заказать
+          </Link>
+        </div>
+      </React.Fragment>
     )
-  };
-  return (
-    <div className={styles.product}>
-        <img src={props.url} alt='test' />
-        <h3>{props.caption}</h3>
-        <p>{props.desc}</p>
-        {product}
-        <Button type='button'>{buttonText}</Button>
-    </div>
-  )
+
 }
 
 export default product

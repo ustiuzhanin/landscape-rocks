@@ -1,3 +1,9 @@
+.form {
+  position: fixed;
+  top: 10%;
+  z-index: 1000;
+}
+
 .fieldset {
   margin: 0 auto;
   padding: 20px;
@@ -77,3 +83,11 @@
   fill: #bfa361;
 }
 
+.product {
+  background-color: #383838;
+  border: 2px solid #bfa361;
+}
+
+.productImg {
+  width: 140px;
+}

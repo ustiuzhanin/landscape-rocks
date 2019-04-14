@@ -5,8 +5,6 @@ import styles from './DrawerToggle.module.css';
 const drawerToggle = (props) => (
     <div className={styles.DrawerToggle} onClick={props.clicked}>
         <span tabIndex='0'></span>
-        {/* <div></div>
-        <div></div> */}
     </div>
 );
 
