@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import ScrollToTop from './hoc/ScrollToTop/ScrollToTop';
 import Home from './containers/Home/Home';
 import Catalog from './containers/Catalog/Catalog';
 import About from './containers/About/About';
@@ -14,18 +15,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Layout>
-          <Switch>
-            <Route path='/' exact component={Home} />
-            <Route path='/catalog' exact component={Catalog} />
-            <Route path='/about' exact component={About} />
-            <Route path='/articles' exact component={Articles} />
-            <Route path='/articles/:id' exact component={FullArticle} />
-            <Route path='/contacts' exact component={Contacts} />
-            <Route path='/contacts/:id' exact component={ContactForms} />
-            <Route path='/catalog/:id' exact component={ProductOrder} />
-          </Switch>
-        </Layout>
+        <ScrollToTop>
+          <Layout>
+            <Switch>
+              <Route path='/' exact component={Home} />
+              <Route path='/catalog' exact component={Catalog} />
+              <Route path='/about' exact component={About} />
+              <Route path='/articles' exact component={Articles} />
+              <Route path='/articles/:id' exact component={FullArticle} />
+              <Route path='/contacts' exact component={Contacts} />
+              <Route path='/contacts/:id' exact component={ContactForms} />
+              <Route path='/catalog/:id' exact component={ProductOrder} />
+            </Switch>
+          </Layout>
+        </ScrollToTop>
       </div>
     );
   }
