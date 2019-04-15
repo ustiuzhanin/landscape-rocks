@@ -9,7 +9,6 @@ import styles from './Home.module.css';
 export class Home extends Component {
   
   render() {
-    console.log(this.props)
     return (
       <div className={styles.main}>
         <h1>Название компании</h1>

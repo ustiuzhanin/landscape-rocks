@@ -68,7 +68,7 @@ function contactForm(props) {
       <React.Fragment>
         <label className={styles.label} htmlFor='product'>Товар:</label>
         <span className={styles.iconSpan}>
-          <input className={[styles.formField, styles.product].join(' ')} id='product' type='text' value={props.product} readonly="readonly" />
+          <input className={[styles.formField, styles.product].join(' ')} id='product' type='text' value={props.product} readOnly="readonly" />
           {svgIcons.product}
         </span>
       </React.Fragment>

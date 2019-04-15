@@ -5,7 +5,7 @@ import styles from './NavigationItem.module.css';
 
 function navigationItem(props) {
   return (
-    <li className={styles.link}>
+    <li className={styles.link} onClick={props.clicked}>
       <NavLink 
         to={props.link}
         exact={props.exact}

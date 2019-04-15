@@ -4,7 +4,7 @@ import NavigationItems from '../NavigationItems/NavigationItems';
 import styles from './SideDrawer.module.css';
 import Backdrop from '../../UI/Backdrop/Backdrop';
 import Logo from '../../UI/Logo/Logo';
-import Button from '../../UI/Button/Button';
+import { Link } from 'react-router-dom';
 
 const sideDrawer = ( props ) => {
     let attachedstyles = [styles.sideDrawer, styles.close];
@@ -19,10 +19,18 @@ const sideDrawer = ( props ) => {
                     <Logo width={100} height={100} />
                 </div>
                 <nav className={styles.nav}>
-                    <NavigationItems />
+                    <NavigationItems clicked={props.closed} />
                 </nav>
                 <div className={styles.contacts}>
-                    <Button type='button'>Заказать Звонок</Button>
+                    <Link onClick={props.closed} className={styles.link} to={{
+                        pathname: '/contacts/callback',
+                        state: {
+                            name: true,
+                            phone: true,
+                            title: 'Заказать Звонок',
+                            btnTitle: 'Заказать Звонок'
+                          }
+                    }}>Заказать Звонок</Link>
                 </div>
             </div>
         </React.Fragment>

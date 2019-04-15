@@ -40,8 +40,14 @@ function product(props) {
           <Link className={styles.link} to={{
             pathname: '/catalog/' + props.caption,
             state: {
-              caption: props.caption,
-              imgUrl: props.url
+              name: true,
+              phone: true,
+              email: true,
+              message: true,
+              product: props.caption,
+              image: props.url,
+              title: 'Заказать товар',
+              btnTitle: 'Отправить'
             }
           }}>
             Заказать

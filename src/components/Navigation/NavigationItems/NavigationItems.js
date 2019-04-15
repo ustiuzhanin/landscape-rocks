@@ -2,15 +2,33 @@ import React from 'react';
 import NavigationItem from './NavigationItem/NavigationItem';
 import styles from './NavigationItems.module.css';
 
-function navigationItems() {
+function navigationItems(props) {
   return (
     <ul className={styles.list}>
-        <NavigationItem link='/' exact>Главная</NavigationItem>
-        <NavigationItem link='/catalog/' exact>Каталог</NavigationItem>
-        <NavigationItem link='/w' exact>Калькулятор</NavigationItem>
-        <NavigationItem link='/about' exact>О компании</NavigationItem>
-        <NavigationItem link='/articles' exact>Полезные статьи</NavigationItem>
-        <NavigationItem link='/contacts/' exact>Контакты</NavigationItem>
+        <NavigationItem 
+          link='/' 
+          clicked={props.clicked} 
+          exact>Главная</NavigationItem>
+        <NavigationItem 
+          link='/catalog/' 
+          clicked={props.clicked} 
+          exact>Каталог</NavigationItem>
+        <NavigationItem 
+          link='/w' 
+          clicked={props.clicked} 
+          exact>Калькулятор</NavigationItem>
+        <NavigationItem 
+          link='/about' 
+          clicked={props.clicked} 
+          exact>О компании</NavigationItem>
+        <NavigationItem 
+          link='/articles' 
+          clicked={props.clicked} 
+          exact>Полезные статьи</NavigationItem>
+        <NavigationItem 
+          link='/contacts/' 
+          clicked={props.clicked} 
+          exact>Контакты</NavigationItem>
     </ul>
   )
 }
