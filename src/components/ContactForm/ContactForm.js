@@ -82,7 +82,7 @@ function contactForm(props) {
   }
 
   return (
-    <form className={props.popup ? styles.form : styles.no}>
+    <form className={styles.form}>
       <fieldset className={styles.fieldset}>
         <legend className={styles.legend}>
         <img className={styles.logo} src={Logo} width="25" height="25" alt="test" />

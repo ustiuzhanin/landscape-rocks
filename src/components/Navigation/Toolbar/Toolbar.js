@@ -7,13 +7,13 @@ import Phone from '../../ContactsSidebar/Phone/Phone';
 import Logo from '../../UI/Logo/Logo';
 
 const toolbar = (props) => (
-    <header className={styles.Toolbar}>
+    <header className={styles.toolbar}>
         <DrawerToggle clicked={props.drawerToggleClicked} />
         <div className={styles.logo}>
             <Phone />
             <Logo width={32} height={32} />
         </div>
-        <nav className={styles.DesktopOnly}>
+        <nav className={styles.desktopOnly}>
             <NavigationItems />
         </nav>
     </header>

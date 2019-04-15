@@ -26,3 +26,45 @@
   text-align: right;
   color: #9c9c9c;
 }
+
+.footerWrapper ul {
+  display: none;
+}
+
+@media (min-width: 768px) { 
+  .footer {
+    padding: 40px 35px;
+  } 
+
+  .footerWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .footerWrapper nav {
+    width: 30%;
+  }
+
+  .footerWrapper ul {
+    display: block;
+  }
+  
+  .footerWrapper ul a {
+    display: inline-block;
+  }
+
+  .aboutWrapper {
+    width: 30%;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+
+  .footerWrapper aside {
+    width: 30%;
+    text-align: right;
+  }
+}

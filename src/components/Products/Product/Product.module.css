@@ -51,3 +51,9 @@
     font-family: inherit;
     background-color: #bfa361;
 }
+
+@media (min-width: 768px) {
+    .product {
+        margin-bottom: 40px;
+    }
+}

@@ -124,17 +124,19 @@ export class Products extends Component {
     
     return (
       <section className={styles.products}>
-        <h2>{this.props.title}</h2>
+        <h2 className={styles.title}>{this.props.title}</h2>
         <p className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales efficitur felis ac tristique.</p>
-        {this.state.product.map(item => {
-            console.log(item.id)
-            return <Product 
-                key={item.id} 
-                caption={item.caption} 
-                desc={item.description} 
-                url={item.url} 
-                priceTable={this.props.inner ? item.priceTable : null} />
-        })}
+        <div className={styles.wrapper}>
+            {this.state.product.map(item => {
+                console.log(item.id)
+                return <Product 
+                    key={item.id} 
+                    caption={item.caption} 
+                    desc={item.description} 
+                    url={item.url} 
+                    priceTable={this.props.inner ? item.priceTable : null} />
+            })}
+        </div>
       </section>
     )
   }

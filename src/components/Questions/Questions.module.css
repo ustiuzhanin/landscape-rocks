@@ -21,3 +21,17 @@
   font-family: inherit;
   background-color: #bfa361;
 }
+
+@media (min-width: 768px) {
+  .questions {
+    padding: 50px;
+  }
+
+  .questions a {
+      width: 260px;
+  }
+
+  .text {
+      margin-bottom: 30px;
+  }
+}

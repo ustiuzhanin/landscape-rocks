@@ -16,7 +16,7 @@ export class Carousel extends Component{
         autoplaySpeed: 4000,
         responsive: [
           {
-            breakpoint: 550,
+            breakpoint: 1200,
             settings: {
               arrows: false
             }

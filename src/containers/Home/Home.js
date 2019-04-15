@@ -11,7 +11,10 @@ export class Home extends Component {
   render() {
     return (
       <div className={styles.main}>
-        <h1>Название компании</h1>
+        <div className={styles.wrapper}>
+          <h1 className={styles.title}>Название компании</h1>
+          <p className={styles.text}>Lorem ipsum dolor sit amet.</p>
+        </div>
         <Carousel />
         <Products title="Наша продукция" />
         <Questions />

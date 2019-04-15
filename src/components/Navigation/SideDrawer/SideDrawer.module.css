@@ -27,7 +27,7 @@
     background-color: #bfa361;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
     .sideDrawer {
         display: none;
     }

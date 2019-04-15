@@ -7,7 +7,7 @@ function questions() {
   return (
     <section className={styles.questions}>
         <h3 className={styles.title}>Консультация по услуам</h3>
-        <p>Lorem ipsum dolor sit amet, pro ex vitae diceret. Eu errem utinam alterum per, in vitae cetero cotidieque pri. Ne sed clita sapientem, et usu modo partiendo sententiae. Autem periculis expetendis no est, nulla patrioque repudiandae vim in.</p>
+        <p className={styles.text}>Lorem ipsum dolor sit amet, pro ex vitae diceret. Eu errem utinam alterum per, in vitae cetero cotidieque pri. Ne sed clita sapientem, et usu modo partiendo sententiae. Autem periculis expetendis no est, nulla patrioque repudiandae vim in.</p>
         <Link className={styles.link} to={{
           pathname: '/contacts/questions',
           state: {
