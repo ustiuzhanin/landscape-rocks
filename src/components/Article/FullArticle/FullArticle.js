@@ -12,9 +12,9 @@ export class FullArticle extends Component {
           <img src={this.props.location.state.url} width='80' height='72' />
         </div>
         <div className={styles.contentWrapper}>
-          <h3>{this.props.location.state.title}</h3>
-          <p>{this.props.location.state.capture}</p>
-          <p>{this.props.location.state.text}</p>
+          <h3 className={styles.title}>{this.props.location.state.title}</h3>
+          <p className={styles.text}>{this.props.location.state.capture}</p>
+          <p className={styles.text}>{this.props.location.state.text}</p>
         </div>
       </section>
     )

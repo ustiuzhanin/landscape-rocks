@@ -32,8 +32,9 @@ function product(props) {
 
     return (
       <React.Fragment>
-        <div className={styles.product}>
+        <div className={props.priceTable ? [styles.product, styles.inner].join(' ') : styles.product}>
           <img src={props.url} alt='test' />
+          <div className={styles.wrapper}>
           <h3>{props.caption}</h3>
           <p>{props.desc}</p>
           {productTable}
@@ -52,6 +53,7 @@ function product(props) {
           }}>
             Заказать
           </Link>
+          </div>
         </div>
       </React.Fragment>
     )

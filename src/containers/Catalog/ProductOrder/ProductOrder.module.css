@@ -3,3 +3,10 @@
   padding: 30px 25px;
   padding-bottom: 25px;
 }
+
+@media (min-width: 768px) {
+  .productOrder {
+    margin-top: 0;
+    padding: 35px;
+  }
+}

@@ -7,7 +7,6 @@ function productOrder(props) {
   console.log(props)
   return (
     <section className={styles.productOrder}>
-      {/* <ContactForm name phone email message product={props.location.state.caption} btnTitle='Отправить' image={props.location.state.imgUrl} title='Заказать товар' /> */}
       <ContactForm {...props.location.state} />
     </section>
   )

@@ -11,3 +11,18 @@
   padding: 5px 25px;
   padding-bottom: 25px;
 }
+
+@media (min-width: 768px) {
+  .fullArticle {
+    margin-top: 0;
+    padding: 35px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}

@@ -2,3 +2,10 @@
   margin-top: 56px;
   padding: 30px 25px;
 }
+
+@media (min-width: 768px) {
+  .contactForm {
+    margin-top: 0;
+    padding: 35px;
+  }
+}

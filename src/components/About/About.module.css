@@ -4,6 +4,11 @@
 }
 
 @media (min-width: 768px) {
+  .about {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
   .title {
     font-size: 37px;
   }

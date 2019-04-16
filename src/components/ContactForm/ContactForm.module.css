@@ -91,4 +91,10 @@
     max-width: 600px;
     margin: 0 auto;
   }
+
+  .inner {
+    margin: 0;
+    margin-left: 50px;
+    flex-grow: 1;
+  }
 }

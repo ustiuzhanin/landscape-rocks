@@ -54,6 +54,22 @@
 
 @media (min-width: 768px) {
     .product {
+        margin: 0 30px;
         margin-bottom: 40px;
+        max-width: 320px;
+    }
+    
+    .inner {
+        display: flex;
+        max-width: 690px;
+        padding: 0 20px 20px;
+        background-color: #f9f9f9;
+    }
+
+    .inner img {
+        max-height: 200px;
+        max-width: 200px;
+        margin-right: 10px;
+        margin-top: 20px;
     }
 }

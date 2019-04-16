@@ -3,3 +3,11 @@
   padding: 5px 25px;
   padding-bottom: 25px;
 }
+
+@media (min-width: 768px) {
+  .catalog {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 25px 35px 0;
+  }
+}

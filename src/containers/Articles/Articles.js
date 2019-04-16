@@ -40,7 +40,7 @@ export class Articles extends Component {
   render() {
     return (
       <section className={styles.articles}>
-        <h2>Полезные статьи о камне</h2>
+        <h2 className={styles.title}>Полезные статьи о камне</h2>
         {this.state.articles.map(item => {
           return <Article title={item.title} url={item.url} capture={item.capture} text={item.text} id={item.id} key={item.id} />
         })}

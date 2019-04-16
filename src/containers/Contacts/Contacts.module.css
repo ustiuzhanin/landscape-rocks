@@ -30,3 +30,17 @@
 .contacts a {
   color: #fff;
 }
+
+@media (min-width: 768px) {
+  .contacts {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 25px 35px 35px;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
