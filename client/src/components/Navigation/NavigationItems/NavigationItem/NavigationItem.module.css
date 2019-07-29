@@ -1,0 +1,36 @@
+.link a {
+    display: block;
+    margin: 10px 0;
+    color: black;
+    text-decoration: none;
+}
+
+.link .active {
+    color: #bfa361;
+}
+
+@media (min-width: 768px) {
+    .link a {
+        margin: 0;
+        padding: 10px 3px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    .link a:hover,
+    .link a:focus-within {
+        color: #f7c90b;
+    }
+
+    .link .active {
+        color: #f7c90b;
+        border-bottom: 1px solid #f7c90b;
+    }
+}
+
+@media (min-width: 1024px) {
+    .link a {
+        font-size: 18px;
+    }
+}

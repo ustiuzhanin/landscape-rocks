@@ -1,0 +1,26 @@
+.products {
+  padding-bottom: 25px;
+  line-height: 26px;
+}
+
+.text {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .products {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 37px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px 0;
+  }
+}

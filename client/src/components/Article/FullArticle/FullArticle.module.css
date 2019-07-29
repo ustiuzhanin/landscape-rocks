@@ -1,0 +1,29 @@
+.fullArticle {
+    margin-top: 56px;
+    
+}
+
+.imgWrapper img {
+  width: 100%;
+}
+
+.contentWrapper {
+  padding: 5px 25px;
+  padding-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .fullArticle {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 35px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}
