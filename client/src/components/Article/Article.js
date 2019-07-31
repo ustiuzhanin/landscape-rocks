@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import styles from './Article.module.css';
 
 function article(props) {
-  console.log(props)
   return (
     <article className={styles.article}>
-      <Link to={{
-        pathname: '/articles/' + props.id,
-        state: props
-      }}>
+      <Link
+        to={{
+          pathname: '/articles/' + props.id,
+          state: props
+        }}
+      >
         <div className={styles.imgWrapper}>
           <img src={props.url} width='80' height='72' />
         </div>
@@ -19,7 +20,7 @@ function article(props) {
         </div>
       </Link>
     </article>
-  )
+  );
 }
 
-export default article
+export default article;

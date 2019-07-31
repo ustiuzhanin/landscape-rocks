@@ -3,9 +3,7 @@ import React, { Component } from 'react';
 import styles from './FullArticle.module.css';
 
 export class FullArticle extends Component {
-
   render() {
-    {console.log(this.props)}
     return (
       <section className={styles.fullArticle}>
         <div className={styles.imgWrapper}>
@@ -17,8 +15,8 @@ export class FullArticle extends Component {
           <p className={styles.text}>{this.props.location.state.text}</p>
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default FullArticle
+export default FullArticle;
