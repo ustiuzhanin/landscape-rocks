@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Button from '../UI/Button/Button';
 import styles from './ContactForm.module.css';
 import Logo from '../../assets/icons/contact.svg';
+import axios from 'axios';
 import { nameSvg } from '../../assets/icons/formIcons/icons.jsx';
 import { phoneSvg } from '../../assets/icons/formIcons/icons.jsx';
 import { emailSvg } from '../../assets/icons/formIcons/icons.jsx';
@@ -13,16 +14,34 @@ export class ContactForm extends Component {
     form: {
       name: '',
       email: '',
+      phone: '',
       message: '',
       product: this.props.product
     }
   };
-  render() {
-    const submitHandler = e => {
-      e.preventDefault();
-      console.log(e);
-    };
 
+  async submitHandler(evt) {
+    evt.preventDefault();
+    console.log('qq');
+    const { name, email, phone, message, product } = this.state.form;
+
+    await axios
+      .post('/api/form', {
+        name,
+        email,
+        phone,
+        message,
+        product
+      })
+      .then(response => {
+        console.log(response);
+      })
+      .catch(error => {
+        console.log(error.response);
+      });
+  }
+
+  render() {
     const inputChangeHandler = e => {
       this.setState({
         form: {
@@ -153,7 +172,7 @@ export class ContactForm extends Component {
         className={
           this.props.inner ? [styles.form, styles.inner].join(' ') : styles.form
         }
-        onSubmit={submitHandler}
+        onSubmit={evt => this.submitHandler(evt)}
       >
         <fieldset className={styles.fieldset}>
           <legend className={styles.legend}>
