@@ -4,6 +4,8 @@ import Button from '../UI/Button/Button';
 import styles from './ContactForm.module.css';
 import Logo from '../../assets/icons/contact.svg';
 import axios from 'axios';
+import InputMask from 'react-input-mask';
+
 import { nameSvg } from '../../assets/icons/formIcons/icons.jsx';
 import { phoneSvg } from '../../assets/icons/formIcons/icons.jsx';
 import { emailSvg } from '../../assets/icons/formIcons/icons.jsx';
@@ -87,14 +89,13 @@ export class ContactForm extends Component {
             Ваш Телефон:
           </label>
           <span className={styles.iconSpan}>
-            <input
+            <InputMask
+              {...this.props}
               className={styles.formField}
               id='phone'
               name='phone'
-              type='tel'
-              pattern='7[0-9]{10}'
+              mask='+7\ (999)-999-9999'
               placeholder='Телефон'
-              title='Номер должен содержать 11 цифр и начинатся с 7'
               onChange={inputChangeHandler}
               required
             />
